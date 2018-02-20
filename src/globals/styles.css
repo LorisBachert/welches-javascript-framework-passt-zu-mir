@@ -1,0 +1,56 @@
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #f5f4f2;
+}
+body,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+}
+i.fas {
+  font-family: FontAwesome;
+}
+.centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.centered-container .centered-content {
+  max-width: 100%;
+  width: 500px;
+}
+.centered-container .centered-content .title {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+.centered-container .centered-content .description {
+  margin-top: 0;
+  text-align: center;
+  font-size: .9em;
+}
+.centered-container .centered-content .button-container {
+  text-align: center;
+}
+.centered-container .centered-content .button-container .answer-button {
+  width: 100%;
+  margin: .3em 0;
+}
+.fullscreen {
+  width: 100%;
+  height: 100%;
+}
+.page {
+  padding: .5em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

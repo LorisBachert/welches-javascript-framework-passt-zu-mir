@@ -1,0 +1,42 @@
+@import url("../../globals/variables");
+
+@border-color: darken(@color-highlight, 2%);
+@white-border-color: darken(@color-background-white, 2%);
+@shadow-color: darken(@color-highlight, 10%);
+@white-shadow-color: darken(@color-background-white, 10%);
+
+.button {
+    position: relative;
+    min-width: 100px;
+    padding: 0.4em 1.5em;
+    font-size: .8em;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    background-color: @color-highlight;
+    color: @color-background-white;
+    border: 1px solid @border-color;
+    box-shadow: 0 0 0 transparent, 0 4px 0 @shadow-color;
+
+    &.fullscreen {
+        width: 100%;
+    }
+
+    &:hover {
+        -webkit-transform: translateY(1px);
+        -moz-transform: translateY(1px);
+        -ms-transform: translateY(1px);
+        -o-transform: translateY(1px);
+        transform: translateY(1px);
+        box-shadow: 0 0 0 transparent, 0 3px 0 @shadow-color;
+    }
+
+    &:active {
+        -webkit-transform: translateY(4px);
+        -moz-transform: translateY(4px);
+        -ms-transform: translateY(4px);
+        -o-transform: translateY(4px);
+        transform: translateY(4px);
+        box-shadow: 0 0 0 transparent, 0 0 0 @shadow-color;
+    }
+}
