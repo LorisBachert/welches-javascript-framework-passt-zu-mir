@@ -1,0 +1,130 @@
+{
+    "frameworks": [
+        "React",
+        "Angular",
+        "Vue",
+        "Ember"
+    ],
+    "questions": [
+        {
+            "title": "Keine Third-Party-Frameworks",
+            "description": "Ich will keine Third-Party-Frameworks verwenden.",
+            "answers": [
+                {
+                    "title": "Ja, ich will nur mit dem Framework selbst arbeiten können.",
+                    "ratings": [ -2, 2, -2, 1 ]
+                },
+                {
+                    "title": "Ich verwende Third-Party-Frameworks, solange sie etabliert und bekannt sind.",
+                    "ratings": [ 2, 2, 1, 1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Schnellstart",
+            "description": "Ich will schnell Einsteigen können.",
+            "answers": [
+                {
+                    "title": "Ja, ich will sofort loslegen können.",
+                    "ratings": [ 1, -1, 1, -2 ]
+                },
+                {
+                    "title": "Ein bisschen Einarbeitung schadet nie.",
+                    "ratings": [ 1, 1, 1, -2 ]
+                },
+                {
+                    "title": "Es darf gerne etwas länger dauern mit der Einarbeitung.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Einsatz in Großfirmen",
+            "description": "Ich will nur ein Framework verwenden, das auch von Großfirmen eingesetzt oder gar entwickelt wird.",
+            "answers": [
+                {
+                    "title": "Ja, das Framework muss von Großfirmen entwickelt oder eingesetzt sein.",
+                    "ratings": [ 2, 2, 1, 1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Immer auf dem neusten Stand",
+            "description": "Das Framework muss immer die neusten Trends/Standards unterstützen.",
+            "answers": [
+                {
+                    "title": "Ja, das Framework sollte immer die neuste Technologie unterstützen",
+                    "ratings": [ 1, 1, 1, -1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Community",
+            "description": "Ich lege viel Wert auf eine funktionierende Community.",
+            "answers": [
+                {
+                    "title": "Ja, die Community ist mir wichtig",
+                    "ratings": [ 1, -2, -1, 1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Dokumentation",
+            "description": "Die Dokumentation muss sehr umfangreich, gepflegt und aktuell sein.",
+            "answers": [
+                {
+                    "title": "Ja, mit der Dokumenation steht und fällt die Einarbeitung",
+                    "ratings": [ 1, -2, -1, 1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Native Apps",
+            "description": "Es muss möglich sein mit dem Framework native Apps zu entwickeln.",
+            "answers": [
+                {
+                    "title": "Ja, native Apps sind ein Muss",
+                    "ratings": [ 2, 2, 1, 1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "SEO",
+            "description": "Google ist die einzige Suchmaschine, die die Ausführung von JavaScript unterstützt. Um Search Engine Optimization (SEO) für andere Suchmaschinen betreiben zu können wird Server Side Rendering benötigt.",
+            "answers": [
+                {
+                    "title": "Ja, ich muss Suchmaschienen außer Google unterstützen.",
+                    "ratings": [ 1, 1, 1, 1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        }
+    ]
+}
