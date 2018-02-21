@@ -2,7 +2,7 @@
   "name": "choose-javascript-framework-2018",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://lorisbachert.github.io/welches-javascript-framework-passt-zu-mir",
+  "homepage": "https://lorisbachert.github.io/welches-javascript-framework-passt-zu-mir/",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.0.0",

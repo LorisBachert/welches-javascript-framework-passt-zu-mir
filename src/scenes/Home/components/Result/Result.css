@@ -1,3 +1,7 @@
 .result .result-container {
   text-align: center;
 }
+.result .result-container :first-child {
+  margin-bottom: .5em;
+  font-weight: bold;
+}

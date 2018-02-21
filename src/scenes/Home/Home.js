@@ -9,7 +9,8 @@ class Home extends Component {
         super();
         this.state = {
             index: 0,
-            ratings: {}
+            ratings: {},
+            answers: {}
         };
         this.answer = this.answer.bind(this);
         this.addRatings = this.addRatings.bind(this);
@@ -20,7 +21,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        axios.get("/data.json")
+        axios.get("data.json")
             .then(response => {
                 this.setState(response.data);
             })
@@ -32,17 +33,21 @@ class Home extends Component {
         return newRatings;
     }
 
-    answer(ratings) {
-        if (this.state.index < this.state.questions.length - 1) {
-            this.setState({
-                index: this.state.index + 1,
-                ratings: this.addRatings(ratings)
-            });
-        } else {
-            this.setState({
-                done: true
-            });
+    answer(title, ratings) {
+        let newState = {};
+        if (title) {
+            let newAnswers = this.state.answers;
+            newAnswers[this.state.index] = title;
+            newState.answers = newAnswers;
         }
+        if (ratings) {
+            newState.ratings = this.addRatings(ratings);
+        }
+        newState.index = this.state.index + 1;
+        if (this.state.index >= this.state.questions.length - 1) {
+            newState.done = true;
+        }
+        this.setState(newState);
     }
 
     back() {
@@ -53,15 +58,15 @@ class Home extends Component {
     }
 
     next() {
-        this.setState({
-            index: this.state.index + 1
-        })
+        this.answer(null);
     }
 
     restart() {
         this.setState({
             index: 0,
-            done: false
+            done: false,
+            ratings: [],
+            answers: {}
         })
     }
 
@@ -76,10 +81,20 @@ class Home extends Component {
                 result[framework] = result[framework] + rating[index];
             })
         });
-        result = Object
-            .keys(result)
-            .sort((a, b) => result[b] - result[a]);
-        return result;
+        let invertedResult = {};
+        Object.keys(result).forEach(framework => {
+            let rating = result[framework];
+            if (invertedResult.hasOwnProperty(rating)) {
+                invertedResult[rating].push(framework);
+            } else {
+                invertedResult[rating] = [ framework ];
+            }
+        });
+        let orderedResult = Object.keys(invertedResult)
+            .sort((a, b) => +a + +b)
+            .map(key => invertedResult[key]);
+        console.log(result, invertedResult, orderedResult);
+        return orderedResult;
     }
 
     render() {
@@ -87,10 +102,12 @@ class Home extends Component {
             let result = this.aggregateResult();
             return <Result result={result} back={this.back} restart={this.restart}/>;
         } else if (this.state.questions) {
+            let index = this.state.index;
             return (
                 <div className="home fullscreen page">
-                    <Question {...this.state.questions[this.state.index]} answer={this.answer}
-                              index={this.state.index + 1} maxIndex={this.state.questions.length}
+                    <Question {...this.state.questions[index]} answer={this.answer}
+                              givenAnswer={this.state.answers[index]}
+                              index={index + 1} maxIndex={this.state.questions.length}
                                 next={this.next} back={this.back}/>
                 </div>
             );
