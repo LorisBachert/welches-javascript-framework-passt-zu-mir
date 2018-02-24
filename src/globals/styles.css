@@ -37,6 +37,9 @@ i.fas {
   text-align: center;
   font-size: .9em;
 }
+.centered-container .centered-content .description.details {
+  font-size: .7em;
+}
 .centered-container .centered-content .button-container {
   text-align: center;
 }

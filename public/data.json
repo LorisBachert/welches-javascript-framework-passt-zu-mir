@@ -9,15 +9,15 @@
         {
             "title": "Keine Third-Party-Frameworks",
             "description": "Ich will keine zusätzlichen Frameworks verwenden, die nicht vom offiziellen Entwicklerteam des Frameworks entwickelt wurden.",
-            "details": "Angular und Ember haben von Haus aus einen großen Funktionsumfang, während Vue und React modular und klein gehalten sind. Um komplexe Anwendungen mit letzteren umsetzen zu können müssen zusätzliche Frameworks eingesetzt werden.",
+            "details": "Angular und Ember haben von Haus aus einen großen Funktionsumfang während Vue und React modular und klein gehalten sind. Um komplexe Anwendungen mit letzteren umsetzen zu können müssen zusätzliche Frameworks eingesetzt werden.",
             "factor": 0.15,
             "answers": [
                 {
-                    "title": "Ja, ich will nur mit dem Framework selbst arbeiten können",
+                    "title": "Ich will nur mit dem Framework selbst arbeiten",
                     "ratings": [ 0, 4, 0, 3 ]
                 },
                 {
-                    "title": "Ich verwende Third-Party-Frameworks, solange sie etabliert und bekannt sind",
+                    "title": "Ich verwende Third-Party-Frameworks solange sie etabliert und bekannt sind",
                     "ratings": [ 4, 4, 3, 3 ]
                 },
                 {
@@ -28,8 +28,8 @@
         },
         {
             "title": "Funktionsumfang vs. Schnellstart",
-            "description": "Manche Frameworks benötigen aufgrund des großen Funktionsumfangs mehr Einarbeitung, andere Frameworks liefern schnelle Ergebnisse, fordern aber nachträglich viel Einarbeitung wenn der Funktionsumfang nicht ausreicht.",
-            "details": "Angular und Ember haben aufgrund ihres größeren Funktionsumfangs eine höhere Lernkurve als React und Vue. Werden allerdings zusätzliche Frameworks für React und Vue benötigt, fällt erneut Einarbeitung an.",
+            "description": "Manche Frameworks benötigen aufgrund des großen Funktionsumfangs mehr Einarbeitung, andere liefern schnelle Ergebnisse, fordern aber nachträglich mehr Einarbeitung wenn der Funktionsumfang nicht ausreicht und zusätzliche Frameworks benötigt werden.",
+            "details": "Angular und Ember haben aufgrund ihres größeren Funktionsumfangs eine höhere Lernkurve als React und Vue. Werden allerdings zusätzliche Frameworks für React und Vue benötigt, fällt hier vergleichbare Einarbeitung an.",
             "factor": 0.7,
             "answers": [
                 {
@@ -64,7 +64,7 @@
         },
         {
             "title": "Stabilität vs. Trends",
-            "description": "Manche Frameworks setzen auf Stabilität und es ändert sich nur selten etwas, andere Frameworks sind schnelllebiger und haben trotz Abwärtskompatibilität ständig Neuerungen.",
+            "description": "Manche Frameworks setzen auf Stabilität und es ändert sich nur selten etwas, andere sind schnelllebiger und sind trotz ständiger Neureung ebenfalls abwärtskompatibel.",
             "details": "React, Vue und Angular liefern häufig Neuerungen, während Ember nur langsam Änderungen einführt.",
             "factor": 0.4,
             "answers": [
@@ -83,9 +83,9 @@
             ]
         },
         {
-            "title": "Community und Contribtor",
+            "title": "Community und Entwickler",
             "description": "Die Community spielt eine große Rolle, allerdings kann eine große Community oder zu viele Entwickler auch von Nachteil sein.",
-            "details": "Die Community von Angular aufgrund des Übergangs von AngularJS auf Angular zwiegespalten, wenn auch groß. React hat aufgrund seine Popularität auch eine große Community und - genau wie Ember - enorm viele Contributor. Vue ist eher klein, wird hauptsächlich im asiatischen Raum eingesetzt und wird nur von wenigen entwickelt.",
+            "details": "Die Community von Angular ist aufgrund des Übergangs von AngularJS zu Angular zwar groß aber auch zwiegespalten. React hat aufgrund seine Popularität auch eine große Community und - genau wie Ember - enorm viele Contributor. Vue ist eher klein, wird hauptsächlich im asiatischen Raum eingesetzt und wird nur von wenigen entwickelt.",
             "factor": 0.9,
             "answers": [
                 {
@@ -108,8 +108,8 @@
         },
         {
             "title": "Dokumentation",
-            "description": "Häufig findet man veraltete Dokumentation im Internet, andermals findet man aufgrund der Masse nicht das, wonach man eigentlich sucht.",
-            "details": "Gerade bei Angular ist die Dokumentation ein Problemthema, da man immer wieder auf Dokumentation von AngularJS stößt, die allerdings in Angular nicht mehr einsetzbar ist. React hat aufgrund seiner großen Community auch eine sehr umfangreiche Dokumentation. Vue und Ember haben eine kleine, aber gut gepflegte Dokumentation, leider ist ein Großteil der Beiträge die man zu Vue findet auf chinesisch.",
+            "description": "Dokumentation ist gerade für den Einstieg wichtig. Häufig findet man veraltete Dokumentation im Internet oder man findet aufgrund der schieren Masse nicht das, wonach man eigentlich sucht.",
+            "details": "Gerade bei Angular ist die Dokumentation ein Problemthema, da man immer wieder auf Dokumentation von AngularJS stößt, die leider auf Angular nicht übertragbar ist. React hat aufgrund seiner großen Community auch eine sehr umfangreiche Dokumentation. Vue und Ember haben eine kleine, aber gut gepflegte Dokumentation. Leider ist ein Großteil der Beiträge die man zu Vue findet auf chinesisch.",
             "factor": 0.8,
             "answers": [
                 {
@@ -150,7 +150,7 @@
             "title": "Erfahrung in Java/C#",
             "description": "Ich habe bereits in Java oder C# entwickelt und mich an die Syntax gewöhnt.",
             "details": "Angular verwendet mittlerweile fast ausschließlich TypeScript, dessen Syntax und Konzepte denn von Java oder C# ähneln.",
-            "factor": 0.5,
+            "factor": 0.4,
             "answers": [
                 {
                     "title": "Ja, ich habe Erfahrung in Java/C# und möchte diese einsetzen",
@@ -164,8 +164,8 @@
         },
         {
             "title": "Eingabefelder",
-            "description": "Meine Anwendung hat viele Einabefelder, die noch dazu validiert werden sollen.",
-            "details": "Angular liefert von Haus aus eine Formularunterstützung und -validierung, die anderen Frameworks benötigen hierfür zusätzliche Frameworks. React unterstützt nativ kein 2-Wege-Databinding.",
+            "description": "Meine Anwendung hat viele Eingabefelder, die noch dazu validiert werden sollen.",
+            "details": "Angular liefert von Haus aus eine Formularunterstützung und -validierung, die anderen Frameworks benötigen hierfür zusätzliche Frameworks. React unterstützt kein 2-Wege-Databinding, was die Formularentwicklung verkompliziert.",
             "factor": 0.7,
             "answers": [
                 {
@@ -213,7 +213,7 @@
                     "ratings": [ 4, 1, 1, 0 ]
                 },
                 {
-                    "title": "Ich halte mich an Standards",
+                    "title": "Ich halte mich gerne an Standards",
                     "ratings": [ 0, 3, 4, 4 ]
                 },
                 {

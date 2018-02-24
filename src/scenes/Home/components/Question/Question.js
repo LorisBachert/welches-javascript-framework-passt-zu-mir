@@ -52,10 +52,29 @@ class Question extends Component {
                                 : null
                         }
                         <div>Frage {displayIndex} von {displayMaxIndex}</div>
-                        <i onClick={this.props.next} className="nav fas fa-angle-right"/>
+                        {
+                            this.props.index < this.props.questions.length - 1 ?
+                                <i onClick={this.props.next} className="nav fas fa-angle-right"/>
+                                : null
+                        }
                     </div>
                     <h1 className="title">{currentQuestion.title}</h1>
                     <p className="description">{currentQuestion.description}</p>
+                    <div>
+                        { this.state && this.state.isExpanded ?
+                            <div className="details details-toggle" onClick={() => this.setState({isExpanded: false})}>
+                                Details verstecken
+                                <i className="nav fas fa-angle-up"/>
+                            </div> :
+                            <div className="details details-toggle" onClick={() => this.setState({isExpanded: true})}>
+                                Details anzeigen
+                                <i className="nav fas fa-angle-down"/>
+                            </div>
+                        }
+                        <div className={"question-details" + (this.state && this.state.isExpanded ? " expanded" : "")}>
+                            {currentQuestion.details}
+                        </div>
+                    </div>
                     <div className="button-container">
                         {
                             currentQuestion.answers.map(answer => {

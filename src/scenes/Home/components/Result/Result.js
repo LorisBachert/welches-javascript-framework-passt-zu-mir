@@ -41,7 +41,7 @@ class Result extends Component  {
             let factor = question.factor;
             let highestForQuestion = [];
             let givenAnswer = this.props.answers[questionIndex];
-            if (givenAnswer.ignore) {
+            if (!givenAnswer || givenAnswer.ignore) {
                 return;
             }
             // for each answer of the question
