@@ -14,6 +14,6 @@ export function fetchFrameworks() {
 function fetchQuestionsSuccess(frameworks) {
     return {
         type: FETCH_FRAMEWORKS,
-        data: frameworks
+        frameworks
     }
 }

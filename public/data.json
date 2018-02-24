@@ -13,16 +13,16 @@
             "factor": 0.15,
             "answers": [
                 {
-                    "title": "Ja, ich will nur mit dem Framework selbst arbeiten können.",
-                    "ratings": [ -2, 2, -2, 1 ]
+                    "title": "Ja, ich will nur mit dem Framework selbst arbeiten können",
+                    "ratings": [ 0, 4, 0, 3 ]
                 },
                 {
-                    "title": "Ich verwende Third-Party-Frameworks, solange sie etabliert und bekannt sind.",
-                    "ratings": [ 2, 2, 1, 1 ]
+                    "title": "Ich verwende Third-Party-Frameworks, solange sie etabliert und bekannt sind",
+                    "ratings": [ 4, 4, 3, 3 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -33,16 +33,16 @@
             "factor": 0.7,
             "answers": [
                 {
-                    "title": "Ein großer Funktionsumfang ist mir die längere Einarbeitung wert.",
-                    "ratings": [ -1, 1, -1, 2 ]
+                    "title": "Ein großer Funktionsumfang ist mir die längere Einarbeitung wert",
+                    "ratings": [ 1, 3, 1, 4 ]
                 },
                 {
-                    "title": "Ich will schnelle Ergebnisse.",
-                    "ratings": [ 2, -1, 2, -2 ]
+                    "title": "Ich will schnelle Ergebnisse",
+                    "ratings": [ 4, 1, 4, 0 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -53,12 +53,12 @@
             "factor": 0.4,
             "answers": [
                 {
-                    "title": "Ja, das Framework muss von Großfirmen entwickelt oder eingesetzt sein.",
-                    "ratings": [ 2, 2, 1, 1 ]
+                    "title": "Ja, das Framework muss von Großfirmen entwickelt oder eingesetzt sein",
+                    "ratings": [ 4, 4, 3, 3 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -70,15 +70,15 @@
             "answers": [
                 {
                     "title": "Das Framework sollte immer die neuste Technologie unterstützen",
-                    "ratings": [ 1, 1, 1, -1 ]
+                    "ratings": [ 3, 3, 3, 1 ]
                 },
                 {
                     "title": "Ich will mich nicht ständig in Neuerung einarbeiten",
-                    "ratings": [ -1, -2, -1, 2 ]
+                    "ratings": [ 1, 0, 1, 4 ]
                 },
                 {
                     "title": "Ist mir egal",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "ignore": true
                 }
             ]
         },
@@ -90,19 +90,19 @@
             "answers": [
                 {
                     "title": "Ich möchte eine möglichst große Community",
-                    "ratings": [ 2, 1, -1, 0 ]
+                    "ratings": [ 4, 3, 1, 2 ]
                 },
                 {
                     "title": "Zu viele Köche verderben die Suppe",
-                    "ratings": [ -2, 0, 2, -1 ]
+                    "ratings": [ 0, 2, 4, 1 ]
                 },
                 {
                     "title": "Ich möchte ein aktiver Teil der Community werden",
-                    "ratings": [ 2, 2, -2, -1 ]
+                    "ratings": [ 4, 4, 0, 1 ]
                 },
                 {
                     "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "ignore": true
                 }
             ]
         },
@@ -114,19 +114,19 @@
             "answers": [
                 {
                     "title": "Aktualität ist das A und O",
-                    "ratings": [ 2, -2, 2, 2 ]
+                    "ratings": [ 4, 0, 4, 4 ]
                 },
                 {
                     "title": "Es muss verständlich sein",
-                    "ratings": [ 2, 2, -2, 1 ]
+                    "ratings": [ 4, 4, 0, 3 ]
                 },
                 {
                     "title": "Lieber wenig, dafür aber gut gepflegt",
-                    "ratings": [ -1, -1, 2, 2 ]
+                    "ratings": [ 1, 1, 4, 4 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -138,11 +138,11 @@
             "answers": [
                 {
                     "title": "Ja, ich möchte native Apps entwickeln",
-                    "ratings": [ 2, 2, 1, 1 ]
+                    "ratings": [ 4, 4, 3, 3 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -154,11 +154,11 @@
             "answers": [
                 {
                     "title": "Ja, ich habe Erfahrung in Java/C# und möchte diese einsetzen",
-                    "ratings": [ -1, 2, -1, -1 ]
+                    "ratings": [ 1, 4, 1, 1 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -170,15 +170,15 @@
             "answers": [
                 {
                     "title": "Ich habe viele Formulare, die validiert werden müssen",
-                    "ratings": [ -2, 2, 0, 0 ]
+                    "ratings": [ 0, 4, 2, 2 ]
                 },
                 {
                     "title": "Ich habe viele, nicht-validiert Formulare",
-                    "ratings": [ -2, 2, 1, 1 ]
+                    "ratings": [ 0, 4, 3, 3 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -190,15 +190,15 @@
             "answers": [
                 {
                     "title": "Ich verwende ein Backend",
-                    "ratings": [ -1, -1, -1, 2 ]
+                    "ratings": [ 1, 1, 1, 4 ]
                 },
                 {
                     "title": "Meine Daten müssen nicht persistiert werden",
-                    "ratings": [ 2, 2, 2, 1 ]
+                    "ratings": [ 4, 4, 4, 3 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -210,15 +210,15 @@
             "answers": [
                 {
                     "title": "Ich will flexibel bleiben",
-                    "ratings": [ 2, -1, -1, -2 ]
+                    "ratings": [ 4, 1, 1, 0 ]
                 },
                 {
                     "title": "Ich halte mich an Standards",
-                    "ratings": [ -2, 1, 2, 2 ]
+                    "ratings": [ 0, 3, 4, 4 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         },
@@ -230,19 +230,19 @@
             "answers": [
                 {
                     "title": "Mein Projektumfang ist klein",
-                    "ratings": [ 2, -1, 2, -2 ]
+                    "ratings": [ 4, 1, 4, 0 ]
                 },
                 {
                     "title": "Mein Projektumfang ist eher durchschnittlich",
-                    "ratings": [ 1, 1, 1, -1 ]
+                    "ratings": [ 3, 3, 3, 1 ]
                 },
                 {
                     "title": "Mein Projektumfang ist groß",
-                    "ratings": [ -1, 2, -1, 2 ]
+                    "ratings": [ 1, 4, 1, 4 ]
                 },
                 {
-                    "title": "Ist mir egal.",
-                    "ratings": [ 0, 0, 0, 0 ]
+                    "title": "Ist mir egal",
+                    "ignore": true
                 }
             ]
         }

@@ -37,27 +37,29 @@ class Result extends Component  {
     aggregateMaximums() {
         let result = [];
         // For each question
-        this.props.questions.forEach(question => {
+        this.props.questions.forEach((question, questionIndex) => {
             let factor = question.factor;
             let highestForQuestion = [];
-            console.log("calculating highest rating for question", question);
+            let givenAnswer = this.props.answers[questionIndex];
+            if (givenAnswer.ignore) {
+                return;
+            }
             // for each answer of the question
             question.answers.forEach(answer => {
                 let ratings = answer.ratings;
-                console.log("checking ratings for answer", answer);
+                if (! ratings) {
+                    return;
+                }
                 // for each rating of the answer
                 ratings.forEach((ratingForFramework, index) => {
                     // check if the rating for this answer is higher than the previous ones
                     let currentlyHigh = highestForQuestion[index];
                     let ratingWithFactor = ratingForFramework * factor;
-                    console.log("currently highest rating", currentlyHigh);
-                    console.log("found rating ", ratingWithFactor, "");
                     if (! currentlyHigh || currentlyHigh < ratingWithFactor) {
                         highestForQuestion[index] = ratingWithFactor;
                     }
                 });
             });
-            console.log("highest ratings are", highestForQuestion);
             // add the highest rating to the result
             highestForQuestion.forEach((hightestRating, index) => {
                 if (! result[index]) {
@@ -75,6 +77,9 @@ class Result extends Component  {
         Object.keys(this.props.answers).forEach(keyIndex => {
             let answer = this.props.answers[keyIndex];
             let ratings = answer.ratings;
+            if (!ratings) {
+                return;
+            }
             let factor = this.props.questions[keyIndex].factor;
             ratings.forEach((currentRating, index) => {
                 let ratingWithFactor = currentRating * factor;
@@ -84,15 +89,25 @@ class Result extends Component  {
                 result[index] = result[index] + ratingWithFactor;
             });
         });
-        console.log("Highest possible ratings", highestRating);
-        console.log("Result", result);
-        let percentages = [];
 
+        let percentages = {};
+        result.forEach((rating, index) => {
+            let framework = this.props.frameworks[index];
+            percentages[framework] = (rating / highestRating[index]) * 100;
+        });
+        let sorted = Object.keys(percentages).sort(function(a,b){return percentages[b]-percentages[a]});
+        let sortedResult = [];
+        sorted.forEach(framework => {
+            sortedResult.push({
+                framework,
+                percentage: Math.round(percentages[framework] * 100) / 100
+            });
+        });
+        return sortedResult;
     }
 
     render() {
         let result = this.aggregateResult();
-        console.log(result);
         return (
             <div className="result centered-container page">
                 <div className="centered-content">
@@ -100,17 +115,13 @@ class Result extends Component  {
                     <p className="description">Hier ist dein Ergebnis:</p>
                     <div className="result-container">
                         {
-                            // props.result.map(result => {
-                            //     let frameworks = "";
-                            //     result.map((framework, index) => {
-                            //         frameworks += framework;
-                            //         if (index < result.length - 1) {
-                            //             frameworks += " & ";
-                            //         }
-                            //         return frameworks;
-                            //     });
-                            //     return <div key={frameworks}>{frameworks}</div>
-                            // })
+                            result.map(framework => {
+                                return (
+                                    <div key={framework.framework}>
+                                        <span className="result-title">{framework.framework}</span>
+                                        <span className="result-percentage">{framework.percentage}%</span>
+                                    </div>
+                                )})
                         }
                     </div>
                     <div className="button-container">

@@ -5,3 +5,7 @@
   margin-bottom: .5em;
   font-weight: bold;
 }
+.result .result-container .result-title {
+  font-weight: bold;
+  margin-right: .5em;
+}
