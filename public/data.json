@@ -8,7 +8,9 @@
     "questions": [
         {
             "title": "Keine Third-Party-Frameworks",
-            "description": "Ich will keine Third-Party-Frameworks verwenden.",
+            "description": "Ich will keine zusätzlichen Frameworks verwenden, die nicht vom offiziellen Entwicklerteam des Frameworks entwickelt wurden.",
+            "details": "Angular und Ember haben von Haus aus einen großen Funktionsumfang, während Vue und React modular und klein gehalten sind. Um komplexe Anwendungen mit letzteren umsetzen zu können müssen zusätzliche Frameworks eingesetzt werden.",
+            "factor": 0.15,
             "answers": [
                 {
                     "title": "Ja, ich will nur mit dem Framework selbst arbeiten können.",
@@ -25,19 +27,21 @@
             ]
         },
         {
-            "title": "Schnellstart",
-            "description": "Ich will schnell Einsteigen können.",
+            "title": "Funktionsumfang vs. Schnellstart",
+            "description": "Manche Frameworks benötigen aufgrund des großen Funktionsumfangs mehr Einarbeitung, andere Frameworks liefern schnelle Ergebnisse, fordern aber nachträglich viel Einarbeitung wenn der Funktionsumfang nicht ausreicht.",
+            "details": "Angular und Ember haben aufgrund ihres größeren Funktionsumfangs eine höhere Lernkurve als React und Vue. Werden allerdings zusätzliche Frameworks für React und Vue benötigt, fällt erneut Einarbeitung an.",
+            "factor": 0.7,
             "answers": [
                 {
-                    "title": "Ja, ich will sofort loslegen können.",
-                    "ratings": [ 1, -1, 1, -2 ]
+                    "title": "Ein großer Funktionsumfang ist mir die längere Einarbeitung wert.",
+                    "ratings": [ -1, 1, -1, 2 ]
                 },
                 {
-                    "title": "Ein bisschen Einarbeitung schadet nie.",
-                    "ratings": [ 1, 1, 1, -2 ]
+                    "title": "Ich will schnelle Ergebnisse.",
+                    "ratings": [ 2, -1, 2, -2 ]
                 },
                 {
-                    "title": "Es darf gerne etwas länger dauern mit der Einarbeitung.",
+                    "title": "Ist mir egal.",
                     "ratings": [ 0, 0, 0, 0 ]
                 }
             ]
@@ -45,6 +49,8 @@
         {
             "title": "Einsatz in Großfirmen",
             "description": "Ich will nur ein Framework verwenden, das auch von Großfirmen eingesetzt oder gar entwickelt wird.",
+            "details": "Alle Frameworks werden von Großfirmen eingesetzt. Mit Facebook hinter React und Google hinter Angular werden aber diese beiden von den größten Unternehmen bestärkt.",
+            "factor": 0.4,
             "answers": [
                 {
                     "title": "Ja, das Framework muss von Großfirmen entwickelt oder eingesetzt sein.",
@@ -57,26 +63,42 @@
             ]
         },
         {
-            "title": "Immer auf dem neusten Stand",
-            "description": "Das Framework muss immer die neusten Trends/Standards unterstützen.",
+            "title": "Stabilität vs. Trends",
+            "description": "Manche Frameworks setzen auf Stabilität und es ändert sich nur selten etwas, andere Frameworks sind schnelllebiger und haben trotz Abwärtskompatibilität ständig Neuerungen.",
+            "details": "React, Vue und Angular liefern häufig Neuerungen, während Ember nur langsam Änderungen einführt.",
+            "factor": 0.4,
             "answers": [
                 {
-                    "title": "Ja, das Framework sollte immer die neuste Technologie unterstützen",
+                    "title": "Das Framework sollte immer die neuste Technologie unterstützen",
                     "ratings": [ 1, 1, 1, -1 ]
                 },
                 {
-                    "title": "Ist mir egal.",
+                    "title": "Ich will mich nicht ständig in Neuerung einarbeiten",
+                    "ratings": [ -1, -2, -1, 2 ]
+                },
+                {
+                    "title": "Ist mir egal",
                     "ratings": [ 0, 0, 0, 0 ]
                 }
             ]
         },
         {
-            "title": "Community",
-            "description": "Ich lege viel Wert auf eine funktionierende Community.",
+            "title": "Community und Contribtor",
+            "description": "Die Community spielt eine große Rolle, allerdings kann eine große Community oder zu viele Entwickler auch von Nachteil sein.",
+            "details": "Die Community von Angular aufgrund des Übergangs von AngularJS auf Angular zwiegespalten, wenn auch groß. React hat aufgrund seine Popularität auch eine große Community und - genau wie Ember - enorm viele Contributor. Vue ist eher klein, wird hauptsächlich im asiatischen Raum eingesetzt und wird nur von wenigen entwickelt.",
+            "factor": 0.9,
             "answers": [
                 {
-                    "title": "Ja, die Community ist mir wichtig",
-                    "ratings": [ 1, -2, -1, 1 ]
+                    "title": "Ich möchte eine möglichst große Community",
+                    "ratings": [ 2, 1, -1, 0 ]
+                },
+                {
+                    "title": "Zu viele Köche verderben die Suppe",
+                    "ratings": [ -2, 0, 2, -1 ]
+                },
+                {
+                    "title": "Ich möchte ein aktiver Teil der Community werden",
+                    "ratings": [ 2, 2, -2, -1 ]
                 },
                 {
                     "title": "Ist mir egal.",
@@ -86,11 +108,21 @@
         },
         {
             "title": "Dokumentation",
-            "description": "Die Dokumentation muss sehr umfangreich, gepflegt und aktuell sein.",
+            "description": "Häufig findet man veraltete Dokumentation im Internet, andermals findet man aufgrund der Masse nicht das, wonach man eigentlich sucht.",
+            "details": "Gerade bei Angular ist die Dokumentation ein Problemthema, da man immer wieder auf Dokumentation von AngularJS stößt, die allerdings in Angular nicht mehr einsetzbar ist. React hat aufgrund seiner großen Community auch eine sehr umfangreiche Dokumentation. Vue und Ember haben eine kleine, aber gut gepflegte Dokumentation, leider ist ein Großteil der Beiträge die man zu Vue findet auf chinesisch.",
+            "factor": 0.8,
             "answers": [
                 {
-                    "title": "Ja, mit der Dokumenation steht und fällt die Einarbeitung",
-                    "ratings": [ 1, -2, -1, 1 ]
+                    "title": "Aktualität ist das A und O",
+                    "ratings": [ 2, -2, 2, 2 ]
+                },
+                {
+                    "title": "Es muss verständlich sein",
+                    "ratings": [ 2, 2, -2, 1 ]
+                },
+                {
+                    "title": "Lieber wenig, dafür aber gut gepflegt",
+                    "ratings": [ -1, -1, 2, 2 ]
                 },
                 {
                     "title": "Ist mir egal.",
@@ -100,10 +132,12 @@
         },
         {
             "title": "Native Apps",
-            "description": "Es muss möglich sein mit dem Framework native Apps zu entwickeln.",
+            "description": "Ich möchte mit dem Framework auch native Apps entwickeln können.",
+            "details": "Alle Frameworks bieten mittlerweile eine Toolpalette an, um native Apps entwickeln zu können. Allerdings sind hier React und Angular etwas etablierter.",
+            "factor": 0.3,
             "answers": [
                 {
-                    "title": "Ja, native Apps sind ein Muss",
+                    "title": "Ja, ich möchte native Apps entwickeln",
                     "ratings": [ 2, 2, 1, 1 ]
                 },
                 {
@@ -113,12 +147,98 @@
             ]
         },
         {
-            "title": "SEO",
-            "description": "Google ist die einzige Suchmaschine, die die Ausführung von JavaScript unterstützt. Um Search Engine Optimization (SEO) für andere Suchmaschinen betreiben zu können wird Server Side Rendering benötigt.",
+            "title": "Erfahrung in Java/C#",
+            "description": "Ich habe bereits in Java oder C# entwickelt und mich an die Syntax gewöhnt.",
+            "details": "Angular verwendet mittlerweile fast ausschließlich TypeScript, dessen Syntax und Konzepte denn von Java oder C# ähneln.",
+            "factor": 0.5,
             "answers": [
                 {
-                    "title": "Ja, ich muss Suchmaschienen außer Google unterstützen.",
-                    "ratings": [ 1, 1, 1, 1 ]
+                    "title": "Ja, ich habe Erfahrung in Java/C# und möchte diese einsetzen",
+                    "ratings": [ -1, 2, -1, -1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Eingabefelder",
+            "description": "Meine Anwendung hat viele Einabefelder, die noch dazu validiert werden sollen.",
+            "details": "Angular liefert von Haus aus eine Formularunterstützung und -validierung, die anderen Frameworks benötigen hierfür zusätzliche Frameworks. React unterstützt nativ kein 2-Wege-Databinding.",
+            "factor": 0.7,
+            "answers": [
+                {
+                    "title": "Ich habe viele Formulare, die validiert werden müssen",
+                    "ratings": [ -2, 2, 0, 0 ]
+                },
+                {
+                    "title": "Ich habe viele, nicht-validiert Formulare",
+                    "ratings": [ -2, 2, 1, 1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Backend",
+            "description": "Meine Anwendung verwendet ein Backend, das die Logik enthält und zur Datenpersistierung dient.",
+            "details": "Ember ist in dieser Thematik weit vorne und kann mit einem Backend kommunizieren, ohne das zusätzlicher Code geschrieben werden muss.",
+            "factor": 0.85,
+            "answers": [
+                {
+                    "title": "Ich verwende ein Backend",
+                    "ratings": [ -1, -1, -1, 2 ]
+                },
+                {
+                    "title": "Meine Daten müssen nicht persistiert werden",
+                    "ratings": [ 2, 2, 2, 1 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Konfiguration vs. Konvention",
+            "description": "Manch einer präferiert Konventionen, manch anderer will flexibler sein und selbst konfigurieren.",
+            "details": "Ember basiert auf dem Motto 'convention over configuration' und ist stark standardorientiert. React ist sehr flexibel und hat kaum Vorgaben.",
+            "factor": 0.5,
+            "answers": [
+                {
+                    "title": "Ich will flexibel bleiben",
+                    "ratings": [ 2, -1, -1, -2 ]
+                },
+                {
+                    "title": "Ich halte mich an Standards",
+                    "ratings": [ -2, 1, 2, 2 ]
+                },
+                {
+                    "title": "Ist mir egal.",
+                    "ratings": [ 0, 0, 0, 0 ]
+                }
+            ]
+        },
+        {
+            "title": "Projektgröße",
+            "description": "Der Umfang des Projekts spielt eine große Rolle bei der Wahl eine Frameworks.",
+            "details": "Für kleine bis mittelgroße Projekt sind React und Vue praktikabler, für alle größeren Projekte sind Angular und Ember optimierter.",
+            "factor": 0.75,
+            "answers": [
+                {
+                    "title": "Mein Projektumfang ist klein",
+                    "ratings": [ 2, -1, 2, -2 ]
+                },
+                {
+                    "title": "Mein Projektumfang ist eher durchschnittlich",
+                    "ratings": [ 1, 1, 1, -1 ]
+                },
+                {
+                    "title": "Mein Projektumfang ist groß",
+                    "ratings": [ -1, 2, -1, 2 ]
                 },
                 {
                     "title": "Ist mir egal.",
