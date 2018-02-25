@@ -2,6 +2,7 @@
   text-align: center;
   font-size: 0.7em;
   margin-bottom: .5em;
+  position: relative;
 }
 .question .question-index div {
   display: inline-block;
@@ -15,6 +16,7 @@
   cursor: pointer;
 }
 .question .details-toggle {
+  position: relative;
   text-align: center;
   cursor: pointer;
   margin-bottom: .3em;
@@ -24,6 +26,7 @@
   font-style: normal;
 }
 .question .question-details {
+  position: relative;
   max-height: 0;
   -webkit-transition: max-height 0.25s;
   -moz-transition: max-height 0.25s;

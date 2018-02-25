@@ -6,9 +6,11 @@ import * as FrameworkActions from "../../services/frameworks/actions";
 
 import Question from './components/Question/Question';
 import Result from "./components/Result/Result";
+import Intro from "./components/Intro/Intro";
 
 function mapStateToProps(state) {
     return {
+        index: state.index,
         questions: state.questions,
         done: state.done
     };
@@ -30,6 +32,8 @@ class Home extends Component {
     stateDependentWidget() {
         if (this.props.done) {
             return <Result />;
+        } else if (this.props.index === -1) {
+            return <Intro />
         } else if (this.props.questions) {
             return <Question />;
         } else {

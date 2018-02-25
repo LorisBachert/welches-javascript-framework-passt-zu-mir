@@ -9,7 +9,7 @@ import { resultReducer } from "./services/result/reducer";
 const INITIAL_STATE = {
     questions: [],
     frameworks: [],
-    index: 0,
+    index: -1,
     answers: {},
     done: false
 };
