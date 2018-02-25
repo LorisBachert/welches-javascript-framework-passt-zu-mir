@@ -22,7 +22,7 @@ class Intro extends Component  {
                 <div className="centered-content">
                     <h1 className="title">Welches JavaScript Framework passt zu mir?</h1>
                     <p className="description">Kaum eine Frage wird im Bereich der Webentwicklung so häufig gestellt wie die, welches Framework für welchen Anwendungsfall am besten geeignet ist. Dieser Fragebogen soll mit durch das Beantworten einiger einfacher Fragen eine <b>Orientierungshilfe</b> bei der Beantwortung dieser Frage liefern.</p>
-                    <p className="description">Der aktuelle Stand dieses Fragebogen ist Februar 2018.</p>
+                    <p className="description">Betrachtet werden die Frameworks React, Angular, Vue und Ember. Der aktuelle Stand dieses Fragebogen ist Februar 2018.</p>
                     <div className="button-container">
                         <Button className="answer-button" onClick={this.props.next}>
                             Los geht's
