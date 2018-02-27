@@ -28,7 +28,7 @@
         },
         {
             "title": "Funktionsumfang vs. Schnellstart",
-            "description": "Manche Frameworks benötigen aufgrund des großen Funktionsumfangs mehr Einarbeitung, andere liefern schnelle Ergebnisse, fordern aber nachträglich mehr Einarbeitung wenn der Funktionsumfang nicht ausreicht und zusätzliche Frameworks benötigt werden.",
+            "description": "Manche Frameworks benötigen aufgrund des großen Funktionsumfangs mehr Einarbeitung, andere liefern schnelle Ergebnisse, fordern aber nachträglich mehr Einarbeitung, wenn der Funktionsumfang nicht ausreicht und zusätzliche Frameworks benötigt werden.",
             "details": "Angular und Ember haben aufgrund ihres größeren Funktionsumfangs eine höhere Lernkurve als React und Vue. Werden allerdings zusätzliche Frameworks für React und Vue benötigt, fällt hier vergleichbare Einarbeitung an.",
             "factor": 0.7,
             "answers": [
@@ -64,7 +64,7 @@
         },
         {
             "title": "Stabilität vs. Trends",
-            "description": "Manche Frameworks setzen auf Stabilität und es ändert sich nur selten etwas, andere sind schnelllebiger und sind trotz ständiger Neureung ebenfalls abwärtskompatibel.",
+            "description": "Manche Frameworks setzen auf Stabilität und es ändert sich nur selten etwas, andere sind schnelllebiger und sind trotz ständiger Neuerung ebenfalls abwärtskompatibel.",
             "details": "React, Vue und Angular liefern häufig Neuerungen, während Ember nur langsam Änderungen einführt.",
             "factor": 0.4,
             "answers": [
@@ -85,7 +85,7 @@
         {
             "title": "Community und Entwickler",
             "description": "Die Community spielt eine große Rolle, allerdings kann eine große Community oder zu viele Entwickler auch von Nachteil sein.",
-            "details": "Die Community von Angular ist aufgrund des Übergangs von AngularJS zu Angular zwar groß aber auch zwiegespalten. React hat aufgrund seine Popularität auch eine große Community und - genau wie Ember - enorm viele Contributor. Vue ist eher klein, wird hauptsächlich im asiatischen Raum eingesetzt und wird nur von wenigen entwickelt.",
+            "details": "Die Community von Angular ist aufgrund des Übergangs von AngularJS zu Angular zwar groß aber auch zwiegespalten. React hat aufgrund seiner Popularität auch eine große Community und - genau wie Ember - enorm viele Contributor. Vue ist eher klein, wird hauptsächlich im asiatischen Raum eingesetzt und wird nur von wenigen entwickelt.",
             "factor": 0.9,
             "answers": [
                 {
@@ -109,7 +109,7 @@
         {
             "title": "Dokumentation",
             "description": "Dokumentation ist gerade für den Einstieg wichtig. Häufig findet man veraltete Dokumentation im Internet oder man findet aufgrund der schieren Masse nicht das, wonach man eigentlich sucht.",
-            "details": "Gerade bei Angular ist die Dokumentation ein Problemthema, da man immer wieder auf Dokumentation von AngularJS stößt, die leider auf Angular nicht übertragbar ist. React hat aufgrund seiner großen Community auch eine sehr umfangreiche Dokumentation. Vue und Ember haben eine kleine, aber gut gepflegte Dokumentation. Leider ist ein Großteil der Beiträge die man zu Vue findet auf chinesisch.",
+            "details": "Gerade bei Angular ist die Dokumentation ein Problemthema, da man immer wieder auf Dokumentation von AngularJS stößt, die leider auf Angular nicht übertragbar ist. React hat aufgrund seiner großen Community auch eine sehr umfangreiche Dokumentation. Vue und Ember haben eine kleine, aber gut gepflegte Dokumentation. Leider ist ein Großteil der Beiträge die man zu Vue findet auf Chinesisch.",
             "factor": 0.8,
             "answers": [
                 {
@@ -184,7 +184,7 @@
         },
         {
             "title": "Backend",
-            "description": "Meine Anwendung verwendet ein Backend, das die Logik enthält und zur Datenpersistierung dient.",
+            "description": "Meine Anwendung verwendet ein Backend, indem die Logik enthalten ist und zur Datenpersistierung dient.",
             "details": "Ember ist in dieser Thematik weit vorne und kann mit einem Backend kommunizieren, ohne das zusätzlicher Code geschrieben werden muss.",
             "factor": 0.85,
             "answers": [
@@ -224,7 +224,7 @@
         },
         {
             "title": "Projektgröße",
-            "description": "Der Umfang des Projekts spielt eine große Rolle bei der Wahl eine Frameworks.",
+            "description": "Der Umfang des Projekts spielt eine große Rolle bei der Wahl eines Frameworks.",
             "details": "Für kleine bis mittelgroße Projekt sind React und Vue praktikabler, für alle größeren Projekte sind Angular und Ember optimierter.",
             "factor": 0.75,
             "answers": [
