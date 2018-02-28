@@ -9,7 +9,7 @@
         {
             "title": "Keine Third-Party-Frameworks",
             "description": "Ich will keine zusätzlichen Frameworks verwenden, die nicht vom offiziellen Entwicklerteam des Frameworks entwickelt wurden.",
-            "details": "Angular und Ember haben von Haus aus einen großen Funktionsumfang während Vue und React modular und klein gehalten sind. Um komplexe Anwendungen mit letzteren umsetzen zu können müssen zusätzliche Frameworks eingesetzt werden.",
+            "details": "Angular und Ember haben von Haus aus einen großen Funktionsumfang, während Vue und React modular und klein gehalten sind. Um komplexe Anwendungen mit letzteren umsetzen zu können, müssen zusätzliche Frameworks eingesetzt werden.",
             "factor": 0.15,
             "answers": [
                 {
@@ -17,7 +17,7 @@
                     "ratings": [ 0, 4, 0, 3 ]
                 },
                 {
-                    "title": "Ich verwende Third-Party-Frameworks solange sie etabliert und bekannt sind",
+                    "title": "Ich verwende Third-Party-Frameworks, solange sie etabliert und bekannt sind",
                     "ratings": [ 4, 4, 3, 3 ]
                 },
                 {
@@ -28,7 +28,7 @@
         },
         {
             "title": "Funktionsumfang vs. Schnellstart",
-            "description": "Manche Frameworks benötigen aufgrund des großen Funktionsumfangs mehr Einarbeitung, andere liefern schnelle Ergebnisse, fordern aber nachträglich mehr Einarbeitung, wenn der Funktionsumfang nicht ausreicht und zusätzliche Frameworks benötigt werden.",
+            "description": "Manche Frameworks benötigen aufgrund des großen Funktionsumfangs mehr Einarbeitung, andere liefern schnelle Ergebnisse, erfordern aber nachträglich mehr Einarbeitung, wenn der Funktionsumfang nicht ausreicht und zusätzliche Frameworks benötigt werden.",
             "details": "Angular und Ember haben aufgrund ihres größeren Funktionsumfangs eine höhere Lernkurve als React und Vue. Werden allerdings zusätzliche Frameworks für React und Vue benötigt, fällt hier vergleichbare Einarbeitung an.",
             "factor": 0.7,
             "answers": [
@@ -47,13 +47,13 @@
             ]
         },
         {
-            "title": "Einsatz in Großfirmen",
-            "description": "Ich will nur ein Framework verwenden, das auch von Großfirmen eingesetzt oder gar entwickelt wird.",
-            "details": "Alle Frameworks werden von Großfirmen eingesetzt. Mit Facebook hinter React und Google hinter Angular werden aber diese beiden von den größten Unternehmen bestärkt.",
+            "title": "Einsatz in Großunternehmen",
+            "description": "Ich will nur ein Framework verwenden, das auch von Großunternehmen eingesetzt oder gar entwickelt wird.",
+            "details": "Alle Frameworks werden von Großunternehmen eingesetzt. Mit Facebook hinter React und Google hinter Angular werden aber diese beiden von sehr großen Unternehmen getragen.",
             "factor": 0.4,
             "answers": [
                 {
-                    "title": "Ja, das Framework muss von Großfirmen entwickelt oder eingesetzt sein",
+                    "title": "Ja, das Framework muss von Großunternehmen entwickelt oder eingesetzt werden",
                     "ratings": [ 4, 4, 3, 3 ]
                 },
                 {
@@ -85,7 +85,7 @@
         {
             "title": "Community und Entwickler",
             "description": "Die Community spielt eine große Rolle, allerdings kann eine große Community oder zu viele Entwickler auch von Nachteil sein.",
-            "details": "Die Community von Angular ist aufgrund des Übergangs von AngularJS zu Angular zwar groß aber auch zwiegespalten. React hat aufgrund seiner Popularität auch eine große Community und - genau wie Ember - enorm viele Contributor. Vue ist eher klein, wird hauptsächlich im asiatischen Raum eingesetzt und wird nur von wenigen entwickelt.",
+            "details": "Die Community von Angular ist aufgrund des Übergangs von AngularJS zu Angular zwar groß, aber auch gespalten. React hat aufgrund seiner Popularität auch eine große Community und - genau wie Ember - enorm viele Mitwirkende. Vue ist eher klein, wird hauptsächlich im asiatischen Raum eingesetzt und wird nur von wenigen entwickelt.",
             "factor": 0.9,
             "answers": [
                 {
@@ -109,7 +109,7 @@
         {
             "title": "Dokumentation",
             "description": "Dokumentation ist gerade für den Einstieg wichtig. Häufig findet man veraltete Dokumentation im Internet oder man findet aufgrund der schieren Masse nicht das, wonach man eigentlich sucht.",
-            "details": "Gerade bei Angular ist die Dokumentation ein Problemthema, da man immer wieder auf Dokumentation von AngularJS stößt, die leider auf Angular nicht übertragbar ist. React hat aufgrund seiner großen Community auch eine sehr umfangreiche Dokumentation. Vue und Ember haben eine kleine, aber gut gepflegte Dokumentation. Leider ist ein Großteil der Beiträge die man zu Vue findet auf Chinesisch.",
+            "details": "Gerade bei Angular ist die Dokumentation ein Problemthema, da man immer wieder auf Dokumentation von AngularJS stößt, die leider auf Angular nicht übertragbar ist. React hat aufgrund seiner großen Community auch eine sehr umfangreiche Dokumentation. Vue und Ember haben eine kleine, aber gut gepflegte Dokumentation. Leider ist ein Großteil der Beiträge, die man zu Vue findet, auf Chinesisch.",
             "factor": 0.8,
             "answers": [
                 {
@@ -149,7 +149,7 @@
         {
             "title": "Erfahrung in Java/C#",
             "description": "Ich habe bereits in Java oder C# entwickelt und mich an die Syntax gewöhnt.",
-            "details": "Angular verwendet mittlerweile fast ausschließlich TypeScript, dessen Syntax und Konzepte denn von Java oder C# ähneln.",
+            "details": "Angular verwendet mittlerweile fast ausschließlich TypeScript, dessen Syntax und Konzepte denen von Java oder C# ähneln.",
             "factor": 0.4,
             "answers": [
                 {
@@ -165,7 +165,7 @@
         {
             "title": "Eingabefelder",
             "description": "Meine Anwendung hat viele Eingabefelder, die noch dazu validiert werden sollen.",
-            "details": "Angular liefert von Haus aus eine Formularunterstützung und -validierung, die anderen Frameworks benötigen hierfür zusätzliche Frameworks. React unterstützt kein 2-Wege-Databinding, was die Formularentwicklung verkompliziert.",
+            "details": "Angular liefert von Haus aus eine Formularunterstützung und -validierung. Die anderen Frameworks benötigen hierfür zusätzliche Frameworks. React unterstützt kein 2-Wege-Databinding, was die Formularentwicklung verkompliziert.",
             "factor": 0.7,
             "answers": [
                 {
@@ -173,7 +173,7 @@
                     "ratings": [ 0, 4, 2, 2 ]
                 },
                 {
-                    "title": "Ich habe viele, nicht-validiert Formulare",
+                    "title": "Ich habe viele, nicht-validierte Formulare",
                     "ratings": [ 0, 4, 3, 3 ]
                 },
                 {
@@ -184,8 +184,8 @@
         },
         {
             "title": "Backend",
-            "description": "Meine Anwendung verwendet ein Backend, indem die Logik enthalten ist und zur Datenpersistierung dient.",
-            "details": "Ember ist in dieser Thematik weit vorne und kann mit einem Backend kommunizieren, ohne das zusätzlicher Code geschrieben werden muss.",
+            "description": "Meine Anwendung verwendet ein Backend, in dem die Logik enthalten ist und das zur Datenpersistierung dient.",
+            "details": "Ember ist in dieser Thematik weit vorne und kann mit einem Backend kommunizieren, ohne dass zusätzlicher Code geschrieben werden muss.",
             "factor": 0.85,
             "answers": [
                 {
@@ -205,7 +205,7 @@
         {
             "title": "Konfiguration vs. Konvention",
             "description": "Manch einer präferiert Konventionen, manch anderer will flexibler sein und selbst konfigurieren.",
-            "details": "Ember basiert auf dem Motto 'convention over configuration' und ist stark standardorientiert. React ist sehr flexibel und hat kaum Vorgaben.",
+            "details": "Ember basiert auf dem Motto 'Convention Over Configuration' und ist stark standardorientiert. React ist sehr flexibel und hat kaum Vorgaben.",
             "factor": 0.5,
             "answers": [
                 {
