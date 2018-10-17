@@ -125,9 +125,6 @@ class Result extends Component  {
                         }
                     </div>
                     <div className="button-container">
-                        <Button className="answer-button" onClick={this.props.back}>
-                            Zurück
-                        </Button>
                         <Button className="answer-button" onClick={this.props.restart}>
                             Neustart
                         </Button>
